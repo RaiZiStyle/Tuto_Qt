@@ -3,4 +3,4 @@ This is a repo to host the code from the book "Rapid GUI programming with Python
 
 # Example
 
-- `alert.py HH:MM <some_test>` Will show a popup at the time given
+- `alert.py HH:MM <some_text>` Will show a popup at the time given
