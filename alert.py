@@ -7,7 +7,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 
-def main(default_time=time.strftime("%H:%M" , time.localtime()), default_message="Hello World"):
+def main(default_time: str = time.strftime("%H:%M", time.localtime()), default_message: str = "Hello World"):
     app = QApplication(sys.argv)
 
     try:
@@ -30,12 +30,12 @@ def main(default_time=time.strftime("%H:%M" , time.localtime()), default_message
         message = "Usage: alert.pyw HH:MM [optional message]"  # 24hr clock
 
     while QTime.currentTime() < due:
-        time.sleep(20) # 20 seconds
+        time.sleep(20)  # 20 seconds
 
     label = QLabel("<font color=red size=72><b>" + message + "</b></font>")
     label.setWindowFlags(Qt.SplashScreen)
     label.show()
-    QTimer.singleShot(60000, app.quit) # 1 minute
+    QTimer.singleShot(60000, app.quit)  # 1 minute
     app.exec_()
 
 
