@@ -14,8 +14,8 @@ class WinDialog(QtWidgets.QDialog):
         self.propertyWidget = PropertyWidget()
 
         section_lay = QtWidgets.QHBoxLayout()
-        section_label = QtWidgets.QLabel("Name: ")
-        section_edit = QtWidgets.QLineEdit('')
+        # section_label = QtWidgets.QLabel("Name: ")
+        # section_edit = QtWidgets.QLineEdit('')
 
         length_lay = QtWidgets.QHBoxLayout()
 
@@ -31,8 +31,8 @@ class WinDialog(QtWidgets.QDialog):
         val_thick = QtGui.QIntValidator(0, 100000, self.thick_edit)
         self.thick_edit.setValidator(val_thick)
 
-        section_lay.addWidget(section_label)
-        section_lay.addWidget(section_edit)
+        # section_lay.addWidget(section_label)
+        # section_lay.addWidget(section_edit)
 
         length_lay.addWidget(length_label)
         length_lay.addWidget(self.length_edit)
