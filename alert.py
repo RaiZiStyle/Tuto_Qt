@@ -12,7 +12,6 @@ def main(default_time: str = time.strftime("%H:%M", time.localtime()), default_m
 
     try:
         due = QTime.currentTime()
-        message = "Alert!"
         # if len(sys.argv) < 2:
         #     raise ValueError
         if len(sys.argv) < 2 and default_time:
